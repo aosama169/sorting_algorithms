@@ -8,15 +8,15 @@
  */
 void swapme(listint_t *current, listint_t *current_old, listint_t **list)
 {
-	listint_t *temp1 = current->next;
-	listint_t *temp2 = current_old->prev;
+	listint_t *tmp1 = current->next;
+	listint_t *tmp2 = current_old->prev;
 
-	if (temp1 != NULL)
-		temp1->prev = current_old;
-	if (temp2 != NULL)
-		temp2->next = current;
-	current->prev = temp2;
-	current_old->next = temp1;
+	if (tmp1 != NULL)
+		tmp1->prev = current_old;
+	if (tmp2 != NULL)
+		tmp2->next = current;
+	current->prev = tmp2;
+	current_old->next = tmp1;
 	current->next = current_old;
 	current_old->prev = current;
 	if (*list == current_old)
