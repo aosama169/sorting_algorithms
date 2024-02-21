@@ -54,10 +54,10 @@ void bitonic_merge(int up, int *array, size_t start, size_t end)
 /**
  * _bitonic_sort - sorts bitonic using recursion
  * @up: true if UP sorting
- * @array: the array pointer
- * @size: the length of array
- * @start: the start position
- * @end: the stop position
+ * @array: array pointer
+ * @size: length of array
+ * @start: start position
+ * @end: stop position
  */
 void _bitonic_sort(int up, int *array, size_t size, size_t start, size_t end)
 {
@@ -78,8 +78,8 @@ void _bitonic_sort(int up, int *array, size_t size, size_t start, size_t end)
 
 /**
  * bitonic_sort - sorts bitonic
- * @array: the array pointer position
- * @size: the length of  array
+ * @array: array pointer position
+ * @size: length of  array
  */
 void bitonic_sort(int *array, size_t size)
 {
